@@ -10,7 +10,7 @@
 4. 将文本从词的序列转换为索引的序列，方便输入模型
 
 ## 分词
-···
+```
 def tokenize(sentences, token='word'):
     """Split sentences into word or char tokens"""
     if token == 'word':
@@ -22,11 +22,11 @@ def tokenize(sentences, token='word'):
 
 tokens = tokenize(lines)
 tokens[0:2]
-···
+```
 ## 建立字典
 构建一个字典
 主要包含词条和索引
-‘’‘
+```
 class Vocab(object):
     def __init__(self, tokens, min_freq=0, use_special_tokens=False):
         counter = count_corpus(tokens) # : 
@@ -62,7 +62,7 @@ def count_corpus(sentences):
     tokens = [tk for st in sentences for tk in st]
     return collections.Counter(tokens) # 返回一个字典，记录每个词的出现次数
 
-···
+```
 
 ## 现有分词模型
 - spaCy
