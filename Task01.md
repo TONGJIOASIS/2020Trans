@@ -3,8 +3,8 @@
 ## 1.1模型
 
 
-$$ 
-\bold y=x_1w_1+x_2w_2+...+x_nw_n+b=\bold x \bold w+b
+$$
+\boldsymbol{y}=x_1w_1+x_2w_2+...+x_nw_n+b=\boldsymbol{x} \boldsymbol{w}+b
 $$ 
 
 
